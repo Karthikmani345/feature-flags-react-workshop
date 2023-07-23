@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Feature Flags Workshop - React Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) ![Node version](https://img.shields.io/badge/node-12.x-blue.svg) ![React version](https://img.shields.io/badge/react-17.x-blue.svg)
 
-## Available Scripts
+This repository is a template for the Feature Flags Workshop. It's a boilerplate project that leverages React to demonstrate the powerful concept of feature flags in a practical, hands-on workshop.
 
-In the project directory, you can run:
+## 🎯 Overview
 
-### `npm start`
+Feature flags, or feature toggles, are a software development technique that allows developers to enable or disable features in a live environment without deploying new code. This workshop guides you through implementing your first feature flag using React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💾 Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ensure you have the following installed on your local machine:
 
-### `npm test`
+- Node.js (v12.x or newer)
+- npm (usually bundled with Node.js)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Installation & Set Up
 
-### `npm run build`
+1. Clone this repository to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   git clone https://github.com/<your-username>/feature-flags-react-workshop.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate into the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   cd feature-flags-react-workshop
+   ```
 
-### `npm run eject`
+3. Install the project dependencies:
+   ```
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Running the Application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the server, use the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+By default, the application runs on port 3000.
 
-## Learn More
+## 🏗️ Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Upon setting up the project, you can start implementing feature flags. The workshop exercises are located in the `/docs` directory. Each exercise will guide you through the process of implementing a feature flag.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📋 Environment Variables
 
-### Code Splitting
+This project uses environment variables for configuration. To set up, create a `.env` file in your project root and set the variables with `REACT_APP_` prefix. For example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+REACT_APP_FEATURE_FLAG_CLIENT_ID=ClientID
+```
 
-### Analyzing the Bundle Size
+For sharing, you can create a `.env.example` file with only the keys. Remember not to commit `.env` file to the version control.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ✅ Testing
 
-### Making a Progressive Web App
+To run tests, use the following command in the project root directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+npm test
+```
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/<your-username>/feature-flags-react-workshop/issues) for any outstanding items. If you want to contribute, please follow these steps:
 
-### Deployment
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project>/<location>`
+5. Create the pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
+
+## 💬 Contact
+
+If you have any questions, concerns, or feedback - feel free to reach out!
+
+## 🙏 Acknowledgements
+
+We would like to extend our sincerest gratitude to all the contributors whose efforts have made this project possible. Your contribution to open-source is greatly appreciated! Happy coding!
